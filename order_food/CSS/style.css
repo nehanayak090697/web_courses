@@ -1,0 +1,263 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Nagigation Bar */
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color:rosybrown;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/* Nagigation Bar :  logo and img styling */
+#logo{
+    margin: 10px 10px;
+}
+
+#logo img{
+    margin:-4px 8px;
+    height: 78px;
+}
+
+/*  Nagigation Bar : List item class styling*/
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+
+#navbar ul li{
+    /* color:peru; */
+    list-style: none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    font-weight: bold;
+    color:rgb(137, 202, 23);
+    display: block;
+    padding:0px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: wheat;
+}
+
+/* HOME SeCTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 150px;
+    height: 563px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{
+    content: "";
+    background:url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .80;
+}
+
+#home h1{
+    color:rgb(137, 202, 23);
+    text-align: center;
+}
+
+#home p{
+    color:rgb(137, 202, 23);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* services  section*/
+
+#services-container{
+    margin-bottom: 29px;
+}
+
+#services{
+    margin: 10px;
+    display: flex;
+    
+    /* flex-direction: column; */
+}
+
+#services .box{
+    border:3px solid rgb(107, 155, 35);
+    border-radius: 22px;
+    box-shadow: 3px 7px 5px 2px black;
+    padding: 20px;
+    margin: 17px 37px;
+    background-color: rgb(215, 241, 172);
+}
+
+#services .box img{
+    height: 164px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-size: 12px;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    /* height: 280px; */
+    padding-bottom: 20px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items{
+    padding: 10px;
+    margin: 10px;
+    box-shadow:10px 10px 10px black;
+    background-color: white;
+}
+
+#clients img{
+    height: 98px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+   
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../contact2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color:rgb(190, 190, 190);
+    /* font-size: 1.3rem; */
+}
+
+#contact-box form{
+    width:40%;
+}
+
+
+#contact-box form label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* footer */
+
+footer{
+    background: black;
+    color: white;
+    padding: 13px;
+    margin: 0px 0px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 3px;
+}
+
+.h-secondary{
+    font-size: 1.6rem;
+    padding: 12px;
+    text-shadow: 2px 2px white;
+}
+
+
+
+.btn{
+    cursor: pointer;
+    padding: 2px 13px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 17px;
+    margin: 10px;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    
+    background-color: rgb(117, 42, 42);
+    border-color: wheat;
+}
+
+.center{
+    text-align: center;
+}
