@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+button{
+    font-family: 'Rampart One', cursive;
+    position: absolute;
+    top:23px;
+    left: 79px;
+    font-size: 15px;
+    width: auto;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(73, 30, 30);
+    color: burlywood;
+    text-align: center;
+
+}
+button:hover{
+    cursor: pointer;
+    background: rgb(129, 74, 74);
+}
+#scorecont{
+    font-family: 'Rampart One', cursive;
+    position: absolute;
+    top:23px;
+    right: 79px;
+    font-size: 15px;
+    width: 112px;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(73, 30, 30);
+    color: burlywood;
+}
+.dino{
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 175px;
+    position: absolute;
+    bottom: 0;
+    left :25px;
+    margin-bottom: 2%;
+}
+.obstacle{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left :50%;
+    margin-bottom: 2%;
+}
+
+.animatedino{
+    animation: dino 1.6s linear;
+}
+
+@keyframes dino {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+.gameOver{
+    
+    font-family: 'Rampart One', cursive;
+    position: relative;
+    top:80px;
+    left: 30%;
+    font-size: 35px;
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(73, 30, 30);
+    color: burlywood;
+}
+
+.animateObstacle{
+    animation: animateObstacle 5s linear infinite;
+}
+@keyframes animateObstacle {
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
